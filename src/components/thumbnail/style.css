@@ -1,0 +1,34 @@
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  opacity: 0.85;
+  will-change: opacity;
+  transition: opacity 500ms;
+  border: 3px solid transparent;
+}
+
+.thumbnail.is-active {
+  border: 3px solid #e04e9c;
+  opacity: 1;
+}
+
+.thumbnail:hover {
+  opacity: 1;
+  border: 3px solid #e04e9c;
+}
+
+.thumbnail img {
+  max-width: 100%;
+  display: block;
+}
+
+.thumbnail.blink {
+  animation: blink-animation 1s steps(5, start) 5;
+}
+
+@keyframes blink-animation {
+  50% {
+    opacity: 0.5;
+  }
+}

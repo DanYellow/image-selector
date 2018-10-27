@@ -1,0 +1,25 @@
+.gallery-scrollview {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  max-height: 250px;
+  overflow: hidden;
+}
+
+.gallery-scrollview:hover {
+  max-height: none;
+  overflow: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .gallery-scrollview {
+    display: block;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .gallery-scrollview li {
+    display: inline-block;
+    width: 35%;
+    height: 35%;
+  }
+}
