@@ -21,7 +21,7 @@ const generateSource = (nbItems = 30) => {
   });
 };
 
-const container = document.getElementById('root');
+const container = document.getElementById('image-selector');
 const config = container.dataset.config || {
   base_path: 'http://danyellow.net/lrv/src/assets/',
   source: generateSource(30),
