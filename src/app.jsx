@@ -25,7 +25,7 @@ class App extends Component {
       isSearching: false,
     };
 
-    this.itemSelectedId = props.config.select_item;
+    this.itemSelectedId = props.config.selected_item_value || null;
   }
 
   goToSelectedImage() {
@@ -70,7 +70,9 @@ class App extends Component {
   selectImage(itemSelected) {
     this.itemSelectedId = itemSelected.id;
     if (this.props.input_id) {
-      document.getElementById(this.props.input_id).value = this.itemSelectedId;
+      document.getElementById(
+        this.props.config.input_id
+      ).value = this.itemSelectedId;
     }
   }
 
