@@ -69,7 +69,7 @@ class App extends Component {
 
   selectImage(itemSelected) {
     this.itemSelectedId = itemSelected.id;
-    if (this.props.input_id) {
+    if (this.props.config.input_id) {
       document.getElementById(
         this.props.config.input_id
       ).value = this.itemSelectedId;
