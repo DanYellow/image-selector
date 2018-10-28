@@ -3,7 +3,6 @@
   max-width: 100%;
   padding: 7px;
   border: 1px solid #282c34;
-  padding-top: 80px;
 
   margin: 0;
   padding: 0;
@@ -30,12 +29,4 @@
 
 .App form {
   margin-bottom: 10px;
-}
-
-.header {
-  left: 7px;
-  right: 7px;
-  top: 5px;
-  position: fixed;
-  z-index: 10;
 }

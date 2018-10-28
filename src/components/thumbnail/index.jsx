@@ -11,6 +11,7 @@ export default props => {
   return (
     <button
       id={`thumbnail-${props.id}`}
+      type="button"
       className={classNames('thumbnail', { 'is-active': props.isActive })}
       onClick={handleClickProxy}
     >

@@ -56,7 +56,7 @@ class App extends Component {
     });
   }
 
-  dataMapping(data) {
+  dataMapping(data = []) {
     return data.map(item => {
       const newObj = {
         key: item.id,

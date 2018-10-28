@@ -23,7 +23,7 @@ export default class Gallery extends React.Component {
   }
 
   render() {
-    const { images = [], handleClick } = this.props;
+    const { images = [] } = this.props;
     return (
       <section className="gallery">
         <ul className="gallery-scrollview">
