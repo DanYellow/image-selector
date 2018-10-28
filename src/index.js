@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import App from './app';
 
-import './index.css';
+// import './index.css';
 import './reset.css';
 
 const generateSource = (nbItems = 30) => {
